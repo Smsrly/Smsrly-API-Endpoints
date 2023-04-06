@@ -66,6 +66,39 @@
 			"response": []
 		},
 		{
+			"name": "Upload real estate image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Youssef/Desktop/20150622231001-for-sale-real-estate-home-house.jpg"
+						},
+						{
+							"key": "RealEstateId",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BaseUrl}}/image/realEstate",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"image",
+						"realEstate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Register",
 			"request": {
 				"method": "POST",
@@ -135,7 +168,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{BaseUrl}}/auth/confirmEmail?email=youssefamr2244@gmail.com&code=6343",
+					"raw": "{{BaseUrl}}/auth/confirmEmail?email=youssefamr2244@gmail.com&code=8482",
 					"host": [
 						"{{BaseUrl}}"
 					],
@@ -150,7 +183,7 @@
 						},
 						{
 							"key": "code",
-							"value": "6343"
+							"value": "8482"
 						}
 					]
 				}
@@ -278,7 +311,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b3Vzc2VmYW1yMjI0NEBnbWFpbC5jb20iLCJpYXQiOjE2ODA4MDQ5MTAsImV4cCI6MTcxMjM0MDkxMH0.zO267y9gTNxiunp9mdCkDsMaX0-xz9FKzBGNg_20cgvRwAaP1Ao8nImVDWMo2rje",
+							"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b3Vzc2VmYW1yMjI0NEBnbWFpbC5jb20iLCJpYXQiOjE2ODA4MTU1NjYsImV4cCI6MTcxMjM1MTU2Nn0.G79c7Xo0DtLcWoWpxsK9xDBi3uUvhjGaAz2aytHzifKj8B3o7un-2_qmD1hBDqXc",
 							"type": "string"
 						}
 					]
@@ -391,7 +424,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b3Vzc2VmYW1yMjI0NEBnbWFpbC5jb20iLCJpYXQiOjE2ODA2NTA4ODIsImV4cCI6MTcxMjE4Njg4Mn0.Jw2u38jnro-z1pfuegvE8rf8aOifmGZ2Ad2XqCiyi78Xj6p8jl9cwAgQIB1WiW7U",
+							"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b3Vzc2VmYW1yMjI0NEBnbWFpbC5jb20iLCJpYXQiOjE2ODA4MTU1NjYsImV4cCI6MTcxMjM1MTU2Nn0.G79c7Xo0DtLcWoWpxsK9xDBi3uUvhjGaAz2aytHzifKj8B3o7un-2_qmD1hBDqXc",
 							"type": "string"
 						}
 					]
@@ -400,7 +433,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": " {\r\n    \"title\":\"real estate\",\r\n    \"description\":\"real estate description\",\r\n    \"area\":1000000,\r\n    \"floorNumber\":10,\r\n    \"bathroomNumber\":10,\r\n    \"roomNumber\":20,\r\n    \"price\":1000000000,\r\n    \"latitude\":30.01741,\r\n    \"longitude\":31.248116\r\n}",
+					"raw": " {\r\n    \"title\":\"real estate\",\r\n    \"description\":\"real estate description\",\r\n    \"area\":100,\r\n    \"floorNumber\":10,\r\n    \"bathroomNumber\":2,\r\n    \"roomNumber\":4,\r\n    \"price\":1000000,\r\n    \"latitude\":30.01741,\r\n    \"longitude\":31.248116\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -486,7 +519,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2U1NjY0MjEzNzkzQGdtYWlsLmNvbSIsImlhdCI6MTY3OTE4NjUzOSwiZXhwIjoxNzEwNzIyNTM5fQ.3psOVY-klSJSHUuFRp3OSAYqQw8yf0twMummGY2JcaE8m62gdUAEyUFylQBbMfTm",
+							"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b3Vzc2VmYW1yMjI0NEBnbWFpbC5jb20iLCJpYXQiOjE2ODA4MTU1NjYsImV4cCI6MTcxMjM1MTU2Nn0.G79c7Xo0DtLcWoWpxsK9xDBi3uUvhjGaAz2aytHzifKj8B3o7un-2_qmD1hBDqXc",
 							"type": "string"
 						}
 					]
@@ -503,13 +536,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{BaseUrl}}/realEstate/3",
+					"raw": "{{BaseUrl}}/realEstate/1",
 					"host": [
 						"{{BaseUrl}}"
 					],
 					"path": [
 						"realEstate",
-						"3"
+						"1"
 					]
 				}
 			},
