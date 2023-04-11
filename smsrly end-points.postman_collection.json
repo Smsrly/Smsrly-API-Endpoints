@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"firstname\":\"Mourad\",\r\n    \"lastname\":\"Dayef\",\r\n    \"email\":\"mouraddayef9@gmail.com\",\r\n    \"image\":\"image_URL\"\r\n}",
+					"raw": "{\r\n    \"firstname\":\"Mourad\",\r\n    \"lastname\":\"Dayef\",\r\n    \"email\":\"mouraddayef9@gmail.com\",\r\n    \"imageURL\":null\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -44,7 +44,7 @@
 						{
 							"key": "image",
 							"type": "file",
-							"src": "/C:/Users/Youssef/Downloads/karim-benzema.jpg"
+							"src": "/C:/Users/Youssef/Desktop/IMG20230312131527.jpg"
 						},
 						{
 							"key": "email",
@@ -79,8 +79,13 @@
 							"src": "/C:/Users/Youssef/Desktop/20150622231001-for-sale-real-estate-home-house.jpg"
 						},
 						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/Youssef/Desktop/20150622231001-for-sale-real-estate-home-house.jpg"
+						},
+						{
 							"key": "RealEstateId",
-							"value": "4",
+							"value": "1",
 							"type": "text"
 						}
 					]
@@ -93,6 +98,35 @@
 					"path": [
 						"image",
 						"realEstate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete image",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{BaseUrl}}/image/realEstate/youssefamr2244.jpg",
+					"host": [
+						"{{BaseUrl}}"
+					],
+					"path": [
+						"image",
+						"realEstate",
+						"youssefamr2244.jpg"
 					]
 				}
 			},
@@ -168,7 +202,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{BaseUrl}}/auth/confirmEmail?email=youssefamr2244@gmail.com&code=8482",
+					"raw": "{{BaseUrl}}/auth/confirmEmail?email=youssefamr2244@gmail.com&code=8077",
 					"host": [
 						"{{BaseUrl}}"
 					],
@@ -183,7 +217,7 @@
 						},
 						{
 							"key": "code",
-							"value": "8482"
+							"value": "8077"
 						}
 					]
 				}
@@ -424,7 +458,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b3Vzc2VmYW1yMjI0NEBnbWFpbC5jb20iLCJpYXQiOjE2ODA4MTU1NjYsImV4cCI6MTcxMjM1MTU2Nn0.G79c7Xo0DtLcWoWpxsK9xDBi3uUvhjGaAz2aytHzifKj8B3o7un-2_qmD1hBDqXc",
+							"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJtb3VyYWRkYXllZjlAZ21haWwuY29tIiwiaWF0IjoxNjgxMTcxOTkwLCJleHAiOjE3MTI3MDc5OTB9.WaKxcZPG1ZI1_qlI6e5mItNiR6NmGV49xWnELEovKDARfWqkbuPw1SeGgrYj97b3",
 							"type": "string"
 						}
 					]
@@ -433,7 +467,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": " {\r\n    \"title\":\"real estate\",\r\n    \"description\":\"real estate description\",\r\n    \"area\":100,\r\n    \"floorNumber\":10,\r\n    \"bathroomNumber\":2,\r\n    \"roomNumber\":4,\r\n    \"price\":1000000,\r\n    \"latitude\":30.01741,\r\n    \"longitude\":31.248116\r\n}",
+					"raw": " {\r\n    \"title\":\"real estate\",\r\n    \"description\":\"real estate description\",\r\n    \"area\":10000,\r\n    \"floorNumber\":10,\r\n    \"bathroomNumber\":2,\r\n    \"roomNumber\":4,\r\n    \"price\":1000,\r\n    \"latitude\":30.01741,\r\n    \"longitude\":31.248116,\r\n    \"city\":\"cairo\",\r\n    \"country\":\"down town\",\r\n    \"isSale\":true\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -519,7 +553,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b3Vzc2VmYW1yMjI0NEBnbWFpbC5jb20iLCJpYXQiOjE2ODA4MTU1NjYsImV4cCI6MTcxMjM1MTU2Nn0.G79c7Xo0DtLcWoWpxsK9xDBi3uUvhjGaAz2aytHzifKj8B3o7un-2_qmD1hBDqXc",
+							"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJtb3VyYWRkYXllZjlAZ21haWwuY29tIiwiaWF0IjoxNjgxMTcxOTkwLCJleHAiOjE3MTI3MDc5OTB9.WaKxcZPG1ZI1_qlI6e5mItNiR6NmGV49xWnELEovKDARfWqkbuPw1SeGgrYj97b3",
 							"type": "string"
 						}
 					]
@@ -595,7 +629,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b3Vzc2VmYW1yMjI0NEBnbWFpbC5jb20iLCJpYXQiOjE2ODA2NTA4ODIsImV4cCI6MTcxMjE4Njg4Mn0.Jw2u38jnro-z1pfuegvE8rf8aOifmGZ2Ad2XqCiyi78Xj6p8jl9cwAgQIB1WiW7U",
+							"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJtb3VyYWRkYXllZjlAZ21haWwuY29tIiwiaWF0IjoxNjgxMTcxOTkwLCJleHAiOjE3MTI3MDc5OTB9.WaKxcZPG1ZI1_qlI6e5mItNiR6NmGV49xWnELEovKDARfWqkbuPw1SeGgrYj97b3",
 							"type": "string"
 						}
 					]
@@ -612,13 +646,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{BaseUrl}}/realEstate/10",
+					"raw": "{{BaseUrl}}/realEstate/1",
 					"host": [
 						"{{BaseUrl}}"
 					],
 					"path": [
 						"realEstate",
-						"10"
+						"1"
 					],
 					"query": [
 						{
@@ -664,6 +698,21 @@
 						{
 							"key": "longitude",
 							"value": "31.248116",
+							"disabled": true
+						},
+						{
+							"key": "city",
+							"value": "sini",
+							"disabled": true
+						},
+						{
+							"key": "country",
+							"value": "taba",
+							"disabled": true
+						},
+						{
+							"key": "isSale",
+							"value": "true",
 							"disabled": true
 						}
 					]
