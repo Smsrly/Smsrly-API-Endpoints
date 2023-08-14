@@ -1,0 +1,1018 @@
+{
+	"info": {
+		"_postman_id": "854d21b1-ed21-4479-9bf5-74ec983c65cb",
+		"name": "Smsrly Endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25652329"
+	},
+	"item": [
+		{
+			"name": "User Endpoints",
+			"item": [
+				{
+					"name": "user-info Endpoint",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJtb3VyYWRkYXllZjlAZ21haWwuY29tIiwiaWF0IjoxNjkxOTQ1OTA3LCJleHAiOjE2OTIwMzIzMDd9.0UdHJTcsdwm1YqWDIZnKUIdEz9mUgRmtXVX9Uw7Ho8XN6slMl5LKv8zgYwVYOUAJ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/user",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit-user Endpoint",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2U1NjY0MjEzNzkzQGdtYWlsLmNvbSIsImlhdCI6MTY5MTk0NzkxNCwiZXhwIjoxNjkyMDM0MzE0fQ.dP-3s3zgUGJiMavAN-ZoEib67SBtwexJ9vre4idpZ1A-ChW6LjkYDXqnVqBfttH8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\":\"Joe\",\r\n    \"last_name\":\"Amr\",\r\n    \"email\":\"joe5664213793@gmail.com\",\r\n    \"password\":\"Youssef@123\",\r\n    \"phone_number\":\"+20 102 328 7109\",\r\n    \"latitude\" : 23.001,\r\n    \"longitude\": 36.092\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/user",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user-uploads Endpoint",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2U1NjY0MjEzNzkzQGdtYWlsLmNvbSIsImlhdCI6MTY5MTk0NjY4MSwiZXhwIjoxNjkyMDMzMDgxfQ.IqqxiScJKggWzH5K0sr6y5YtcJddyPPUO1_YjQtEgakFJ75V72WTv7dAwFXOu6JB",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/user/uploads",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"user",
+								"uploads"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user-requests Endpoint",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2U1NjY0MjEzNzkzQGdtYWlsLmNvbSIsImlhdCI6MTY5MTk0NjY4MSwiZXhwIjoxNjkyMDMzMDgxfQ.IqqxiScJKggWzH5K0sr6y5YtcJddyPPUO1_YjQtEgakFJ75V72WTv7dAwFXOu6JB",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"User\": {\r\n        \"firstName\": \"Mourad\",\r\n        \"lastName\": \"Ashraf\",\r\n        \"password\": \"$2a$10$5xBs4nKxRuWJZog1SzV7h.xAL.zL2o2kt5IELCedPeaRCmwgiU/ge\",\r\n        \"phoneNumber\": 201000845943,\r\n        \"latitude\": 0.0,\r\n        \"longitude\": 0.0,\r\n        \"image\": null,\r\n        \"realEstate\": [\r\n            {\r\n                \"title\":\"test\",\r\n                \"description\":\"description\",\r\n                \"area\":1000,\r\n                \"floorNumber\":1,\r\n                \"bathroomNumber\":1,\r\n                \"roomNumber\":1,\r\n                \"price\":10000,\r\n                \"latitude\":0.244234234,\r\n                \"longitude\":0.5345234234,\r\n                \"image\":\"jhdsfskdgfksdf\"\r\n            }\r\n        ],\r\n        \"message\": [],\r\n        \"save\": [],\r\n        \"userRequest\": [],\r\n        \"enabled\": true,\r\n        \"accountNonLocked\": true,\r\n        \"credentialsNonExpired\": true,\r\n        \"accountNonExpired\": true,\r\n        \"authorities\": null,\r\n        \"username\": \"mouraddayef9@gamil.com\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/user/requests",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"user",
+								"requests"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user-saves Endpoint",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2U1NjY0MjEzNzkzQGdtYWlsLmNvbSIsImlhdCI6MTY5MTk0NjY4MSwiZXhwIjoxNjkyMDMzMDgxfQ.IqqxiScJKggWzH5K0sr6y5YtcJddyPPUO1_YjQtEgakFJ75V72WTv7dAwFXOu6JB",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"User\": {\r\n        \"firstName\": \"Mourad\",\r\n        \"lastName\": \"Ashraf\",\r\n        \"password\": \"$2a$10$5xBs4nKxRuWJZog1SzV7h.xAL.zL2o2kt5IELCedPeaRCmwgiU/ge\",\r\n        \"phoneNumber\": 201000845943,\r\n        \"latitude\": 0.0,\r\n        \"longitude\": 0.0,\r\n        \"image\": null,\r\n        \"realEstate\": [\r\n            {\r\n                \"title\":\"test\",\r\n                \"description\":\"description\",\r\n                \"area\":1000,\r\n                \"floorNumber\":1,\r\n                \"bathroomNumber\":1,\r\n                \"roomNumber\":1,\r\n                \"price\":10000,\r\n                \"latitude\":0.244234234,\r\n                \"longitude\":0.5345234234,\r\n                \"image\":\"jhdsfskdgfksdf\"\r\n            }\r\n        ],\r\n        \"message\": [],\r\n        \"save\": [],\r\n        \"userRequest\": [],\r\n        \"enabled\": true,\r\n        \"accountNonLocked\": true,\r\n        \"credentialsNonExpired\": true,\r\n        \"accountNonExpired\": true,\r\n        \"authorities\": null,\r\n        \"username\": \"mouraddayef9@gamil.com\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/user/saves",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"user",
+								"saves"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "remove-user Endpoint",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2U1NjY0MjEzNzkzQGdtYWlsLmNvbSIsImlhdCI6MTY5MTg0NDMyMCwiZXhwIjoxNjkxOTMwNzIwfQ.4eTTbmNTJki7VK9sOCbF9Rrt11EAE3fFOHjN4ZRuuebre2NpJrb11gQQgWtBnDPL",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/user",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth Endpoints",
+			"item": [
+				{
+					"name": "Reset Password Endpoints",
+					"item": [
+						{
+							"name": "reset-password Endpoint",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BaseUrl}}/auth/reset-password?email=youssefamr2244@gmail.com",
+									"host": [
+										"{{BaseUrl}}"
+									],
+									"path": [
+										"auth",
+										"reset-password"
+									],
+									"query": [
+										{
+											"key": "email",
+											"value": "youssefamr2244@gmail.com"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "verify-reset-password-code Endpoint",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BaseUrl}}/auth/confirm-password?email=youssefamr2244@gmail.com&code=2681",
+									"host": [
+										"{{BaseUrl}}"
+									],
+									"path": [
+										"auth",
+										"confirm-password"
+									],
+									"query": [
+										{
+											"key": "email",
+											"value": "youssefamr2244@gmail.com"
+										},
+										{
+											"key": "code",
+											"value": "2681"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "rechanging-password Endpoint",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2U1NjY0MjEzNzkzQGdtYWlsLmNvbSIsImlhdCI6MTY5MTc0OTUzNiwiZXhwIjoxNjkxODM1OTM2fQ.M0-WDhvFqtQjUaJAOrp-cRRPaiKrwjcluNRbXQOeoElfg244s6ZufA401dgFnvgo",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{BaseUrl}}/auth/new-password?password=Youssef@123",
+									"host": [
+										"{{BaseUrl}}"
+									],
+									"path": [
+										"auth",
+										"new-password"
+									],
+									"query": [
+										{
+											"key": "password",
+											"value": "Youssef@123"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "verify-email Endpoint",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\":\"Youssef\",\r\n    \"last_name\":\"Amr\",\r\n    \"email\":\"youssefamr2244@gmail.com\"\r\n}\r\n// joe5664213793@gmail.com",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/auth/verify-email",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"auth",
+								"verify-email"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "signup Endpoint",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\":\"Joe\",\r\n    \"last_name\":\"Amr\",\r\n    \"email\":\"youssefamr2244@gmail.com\",\r\n    \"password\":\"Youssef@123\",\r\n    \"phone_number\":\"+20 102 328 7109\",\r\n    \"latitude\" : 32.1245,\r\n    \"longitude\": 20.0921\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/auth/signup?otp=5499",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"auth",
+								"signup"
+							],
+							"query": [
+								{
+									"key": "otp",
+									"value": "5499"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login Endpoint",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"joe5664213793@gmail.com\",\r\n    \"password\":\"Youssef@123\" \r\n}\r\n// hassan14311@feng.bu.edu.eg\r\n// joe5664213793@gmail.com",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/auth/login",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout Endpoint",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2U1NjY0MjEzNzkzQGdtYWlsLmNvbSIsImlhdCI6MTY5MTk0NTY3NiwiZXhwIjoxNjkyMDMyMDc2fQ.u4czj0PO0jHS06Poovc0D6GkvzymcfEfDV4rDxfjCr-v311cGB_UuD-BWT3cgjmt",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstname\":\"Youssef\",\r\n    \"lastname\":\"Amr\",\r\n    \"email\":\"youssefamr2244@gmail.com\",\r\n    \"password\":\"Youssef123\",\r\n    \"phoneNumber\":201028897611,\r\n    \"latitude\" : 30.016561,\r\n    \"longitude\": 31.248806,\r\n    \"image\":\"imageProfile\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/auth/logout",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "third-party-auth Endpoint",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\":\"Mourad\",\r\n    \"last_name\":\"Dayef\",\r\n    \"email\":\"mouraddayef9@gmail.com\",\r\n    \"image_url\":null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/auth/third-party-auth",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"auth",
+								"third-party-auth"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "refresh-token Endpoint",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJtb3VyYWRkYXllZjlAZ21haWwuY29tIiwiaWF0IjoxNjkxOTQ1ODYxLCJleHAiOjE2OTI1NTA2NjF9.82iwaYGJl79Gd_TK2xOF3m9LIqydaF-r-nqMJHEPQJBG2otJ_NYolulhYiYWi_v9",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/auth/refresh-token",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"auth",
+								"refresh-token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RealEstate Endpoints",
+			"item": [
+				{
+					"name": "upload-new-real-estate Endpoint",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJtb3VyYWRkYXllZjlAZ21haWwuY29tIiwiaWF0IjoxNjkxOTQ1OTA3LCJleHAiOjE2OTIwMzIzMDd9.0UdHJTcsdwm1YqWDIZnKUIdEz9mUgRmtXVX9Uw7Ho8XN6slMl5LKv8zgYwVYOUAJ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"title\":\"real estate for sale\",\r\n    \"description\":\"real estate description, if you want this real estate please call me or request it\",\r\n    \"area\":100,\r\n    \"floor_number\":3,\r\n    \"bathroom_number\":1,\r\n    \"room_number\":3,\r\n    \"price\":1000000,\r\n    \"latitude\":30.01741,\r\n    \"longitude\":31.248116,\r\n    \"city\":\"cairo\",\r\n    \"country\":\"down town\",\r\n    \"is_sale\":true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/real-estate",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"real-estate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-real-estates Endpoint",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2U1NjY0MjEzNzkzQGdtYWlsLmNvbSIsImlhdCI6MTY5MTk0NjY4MSwiZXhwIjoxNjkyMDMzMDgxfQ.IqqxiScJKggWzH5K0sr6y5YtcJddyPPUO1_YjQtEgakFJ75V72WTv7dAwFXOu6JB",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"User\": {\r\n        \"firstName\": \"Mourad\",\r\n        \"lastName\": \"Ashraf\",\r\n        \"password\": \"$2a$10$5xBs4nKxRuWJZog1SzV7h.xAL.zL2o2kt5IELCedPeaRCmwgiU/ge\",\r\n        \"phoneNumber\": 201000845943,\r\n        \"latitude\": 0.0,\r\n        \"longitude\": 0.0,\r\n        \"image\": null,\r\n        \"realEstate\": [\r\n            {\r\n                \"title\":\"test\",\r\n                \"description\":\"description\",\r\n                \"area\":1000,\r\n                \"floorNumber\":1,\r\n                \"bathroomNumber\":1,\r\n                \"roomNumber\":1,\r\n                \"price\":10000,\r\n                \"latitude\":0.244234234,\r\n                \"longitude\":0.5345234234,\r\n                \"image\":\"jhdsfskdgfksdf\"\r\n            }\r\n        ],\r\n        \"message\": [],\r\n        \"save\": [],\r\n        \"userRequest\": [],\r\n        \"enabled\": true,\r\n        \"accountNonLocked\": true,\r\n        \"credentialsNonExpired\": true,\r\n        \"accountNonExpired\": true,\r\n        \"authorities\": null,\r\n        \"username\": \"mouraddayef9@gamil.com\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/real-estate",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"real-estate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit-real-estate Endpoint",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b3Vzc2VmYW1yMjI0NEBnbWFpbC5jb20iLCJpYXQiOjE2OTE5NDU4MjIsImV4cCI6MTY5MjAzMjIyMn0.Us2m5qCMlvAD0MOxKrH7WX9sKc16xn8KMNcQUqeoFNI6e-imZ9LEFnxCdfckAtAa",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n    \"title\":\"real estate\",\r\n    \"description\":\"real estate description, if you want this real estate please call me or request it\",\r\n    \"area\":100,\r\n    \"floor_number\":3,\r\n    \"bathroom_number\":1,\r\n    \"room_number\":3,\r\n    \"price\":1000000,\r\n    \"latitude\":30.01741,\r\n    \"longitude\":31.248116,\r\n    \"city\":\"cairo\",\r\n    \"country\":\"down town\",\r\n    \"is_sale\":true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/real-estate/1",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"real-estate",
+								"1"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "RealEstate",
+									"disabled": true
+								},
+								{
+									"key": "description",
+									"value": "RealEstate description",
+									"disabled": true
+								},
+								{
+									"key": "area",
+									"value": "1000",
+									"disabled": true
+								},
+								{
+									"key": "floorNumber",
+									"value": "66",
+									"disabled": true
+								},
+								{
+									"key": "bathroomNumber",
+									"value": "5",
+									"disabled": true
+								},
+								{
+									"key": "roomNumber",
+									"value": "10",
+									"disabled": true
+								},
+								{
+									"key": "price",
+									"value": "1000000",
+									"disabled": true
+								},
+								{
+									"key": "latitude",
+									"value": "30.01741",
+									"disabled": true
+								},
+								{
+									"key": "longitude",
+									"value": "31.248116",
+									"disabled": true
+								},
+								{
+									"key": "city",
+									"value": "sini",
+									"disabled": true
+								},
+								{
+									"key": "country",
+									"value": "taba",
+									"disabled": true
+								},
+								{
+									"key": "isSale",
+									"value": "true",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-real-estate Endpoint",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b3Vzc2VmYW1yMjI0NEBnbWFpbC5jb20iLCJpYXQiOjE2OTE4NDUwMDksImV4cCI6MTY5MTkzMTQwOX0.kkGA_DSlwDUYD9VcOxZoa6pqE3NQXdZbMicbsBkY_nTt9ve_16r8_5m4m_zIaBku",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/real-estate/20",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"real-estate",
+								"20"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-real-estate-requests Endpoint",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJtb3VyYWRkYXllZjlAZ21haWwuY29tIiwiaWF0IjoxNjkxOTQ1OTA3LCJleHAiOjE2OTIwMzIzMDd9.0UdHJTcsdwm1YqWDIZnKUIdEz9mUgRmtXVX9Uw7Ho8XN6slMl5LKv8zgYwVYOUAJ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"userId\":\"2\",\r\n        \"realEstateId\":\"3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/real-estate/2/requests",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"real-estate",
+								"2",
+								"requests"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Save Endpoints",
+			"item": [
+				{
+					"name": "save-real-estate Endpoint",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b3Vzc2VmYW1yMjI0NEBnbWFpbC5jb20iLCJpYXQiOjE2OTE5NDU4MjIsImV4cCI6MTY5MjAzMjIyMn0.Us2m5qCMlvAD0MOxKrH7WX9sKc16xn8KMNcQUqeoFNI6e-imZ9LEFnxCdfckAtAa",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/save/2",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"save",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-saved-real-estate Endpoint",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b3Vzc2VmYW1yMjI0NEBnbWFpbC5jb20iLCJpYXQiOjE2OTE5NDU4MjIsImV4cCI6MTY5MjAzMjIyMn0.Us2m5qCMlvAD0MOxKrH7WX9sKc16xn8KMNcQUqeoFNI6e-imZ9LEFnxCdfckAtAa",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"User\": {\r\n        \"firstName\": \"Mourad\",\r\n        \"lastName\": \"Ashraf\",\r\n        \"password\": \"$2a$10$5xBs4nKxRuWJZog1SzV7h.xAL.zL2o2kt5IELCedPeaRCmwgiU/ge\",\r\n        \"phoneNumber\": 201000845943,\r\n        \"latitude\": 0.0,\r\n        \"longitude\": 0.0,\r\n        \"image\": null,\r\n        \"realEstate\": [\r\n            {\r\n                \"title\":\"test\",\r\n                \"description\":\"description\",\r\n                \"area\":1000,\r\n                \"floorNumber\":1,\r\n                \"bathroomNumber\":1,\r\n                \"roomNumber\":1,\r\n                \"price\":10000,\r\n                \"latitude\":0.244234234,\r\n                \"longitude\":0.5345234234,\r\n                \"image\":\"jhdsfskdgfksdf\"\r\n            }\r\n        ],\r\n        \"message\": [],\r\n        \"save\": [],\r\n        \"userRequest\": [],\r\n        \"enabled\": true,\r\n        \"accountNonLocked\": true,\r\n        \"credentialsNonExpired\": true,\r\n        \"accountNonExpired\": true,\r\n        \"authorities\": null,\r\n        \"username\": \"mouraddayef9@gamil.com\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/save/2",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"save",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Request Endpoints",
+			"item": [
+				{
+					"name": "request-real-estate Endpoint",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b3Vzc2VmYW1yMjI0NEBnbWFpbC5jb20iLCJpYXQiOjE2OTE5NDU4MjIsImV4cCI6MTY5MjAzMjIyMn0.Us2m5qCMlvAD0MOxKrH7WX9sKc16xn8KMNcQUqeoFNI6e-imZ9LEFnxCdfckAtAa",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/request/2",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"request",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-requested-real-estate Endpoint",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b3Vzc2VmYW1yMjI0NEBnbWFpbC5jb20iLCJpYXQiOjE2OTE5NDU4MjIsImV4cCI6MTY5MjAzMjIyMn0.Us2m5qCMlvAD0MOxKrH7WX9sKc16xn8KMNcQUqeoFNI6e-imZ9LEFnxCdfckAtAa",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"User\": {\r\n        \"firstName\": \"Mourad\",\r\n        \"lastName\": \"Ashraf\",\r\n        \"password\": \"$2a$10$5xBs4nKxRuWJZog1SzV7h.xAL.zL2o2kt5IELCedPeaRCmwgiU/ge\",\r\n        \"phoneNumber\": 201000845943,\r\n        \"latitude\": 0.0,\r\n        \"longitude\": 0.0,\r\n        \"image\": null,\r\n        \"realEstate\": [\r\n            {\r\n                \"title\":\"test\",\r\n                \"description\":\"description\",\r\n                \"area\":1000,\r\n                \"floorNumber\":1,\r\n                \"bathroomNumber\":1,\r\n                \"roomNumber\":1,\r\n                \"price\":10000,\r\n                \"latitude\":0.244234234,\r\n                \"longitude\":0.5345234234,\r\n                \"image\":\"jhdsfskdgfksdf\"\r\n            }\r\n        ],\r\n        \"message\": [],\r\n        \"save\": [],\r\n        \"userRequest\": [],\r\n        \"enabled\": true,\r\n        \"accountNonLocked\": true,\r\n        \"credentialsNonExpired\": true,\r\n        \"accountNonExpired\": true,\r\n        \"authorities\": null,\r\n        \"username\": \"mouraddayef9@gamil.com\"\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/request/2",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"request",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Image Endpoints",
+			"item": [
+				{
+					"name": "upload-user-image Endpoint",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b3Vzc2VmYW1yMjI0NEBnbWFpbC5jb20iLCJpYXQiOjE2OTE5NDU4MjIsImV4cCI6MTY5MjAzMjIyMn0.Us2m5qCMlvAD0MOxKrH7WX9sKc16xn8KMNcQUqeoFNI6e-imZ9LEFnxCdfckAtAa",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Youssef/Downloads/karim-benzema.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/image/user",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"image",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "upload-real-estate-image Endpoint",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJtb3VyYWRkYXllZjlAZ21haWwuY29tIiwiaWF0IjoxNjkxOTQ1OTA3LCJleHAiOjE2OTIwMzIzMDd9.0UdHJTcsdwm1YqWDIZnKUIdEz9mUgRmtXVX9Uw7Ho8XN6slMl5LKv8zgYwVYOUAJ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Youssef/Desktop/real estate.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/image/real-estate/2",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"image",
+								"real-estate",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete-image Endpoint",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2U1NjY0MjEzNzkzQGdtYWlsLmNvbSIsImlhdCI6MTY5MTk0NzkxNCwiZXhwIjoxNjkyMDM0MzE0fQ.dP-3s3zgUGJiMavAN-ZoEib67SBtwexJ9vre4idpZ1A-ChW6LjkYDXqnVqBfttH8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{BaseUrl}}/image/user/joe5664213793.jpg",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"image",
+								"user",
+								"joe5664213793.jpg"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
