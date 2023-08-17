@@ -17,7 +17,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJtb3VyYWRkYXllZjlAZ21haWwuY29tIiwiaWF0IjoxNjkxOTQ1OTA3LCJleHAiOjE2OTIwMzIzMDd9.0UdHJTcsdwm1YqWDIZnKUIdEz9mUgRmtXVX9Uw7Ho8XN6slMl5LKv8zgYwVYOUAJ",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2U1NjY0MjEzNzkzQGdtYWlsLmNvbSIsImlhdCI6MTY5MjI5Mzc1NCwiZXhwIjoxNjkyMzgwMTU0fQ.AM1nAqN8ujgobQB6NxDUkv92tDdZLDjUTXP0GVDBTmsV9ttLPG91WpHi8RFq6Yum",
 									"type": "string"
 								}
 							]
@@ -31,6 +31,18 @@
 							],
 							"path": [
 								"user"
+							],
+							"query": [
+								{
+									"key": "size",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "0",
+									"disabled": true
+								}
 							]
 						}
 					},
@@ -44,7 +56,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2U1NjY0MjEzNzkzQGdtYWlsLmNvbSIsImlhdCI6MTY5MTk0NzkxNCwiZXhwIjoxNjkyMDM0MzE0fQ.dP-3s3zgUGJiMavAN-ZoEib67SBtwexJ9vre4idpZ1A-ChW6LjkYDXqnVqBfttH8",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzbXNybHkyMDIzQGdtYWlsLmNvbSIsImlhdCI6MTY5MjE4NDExNSwiZXhwIjoxNjkyMjcwNTE1fQ.eyAd-oaeIjw3SuEo14cyTqqmiqyTku7h20f3RmI2F5LuFgFZ6p7GvFcZ9sYOfufh",
 									"type": "string"
 								}
 							]
@@ -53,7 +65,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"first_name\":\"Joe\",\r\n    \"last_name\":\"Amr\",\r\n    \"email\":\"joe5664213793@gmail.com\",\r\n    \"password\":\"Youssef@123\",\r\n    \"phone_number\":\"+20 102 328 7109\",\r\n    \"latitude\" : 23.001,\r\n    \"longitude\": 36.092\r\n}",
+							"raw": "{\r\n    \"first_name\":\"Smsrly\",\r\n    \"last_name\":\"Co.\",\r\n    \"email\":\"smsrly2023@gmail.com\",\r\n    \"password\":\"\",\r\n    \"phone_number\":\"+20 102 328 7109\",\r\n    \"latitude\" : 23.001,\r\n    \"longitude\": 36.092\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -80,7 +92,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2U1NjY0MjEzNzkzQGdtYWlsLmNvbSIsImlhdCI6MTY5MTk0NjY4MSwiZXhwIjoxNjkyMDMzMDgxfQ.IqqxiScJKggWzH5K0sr6y5YtcJddyPPUO1_YjQtEgakFJ75V72WTv7dAwFXOu6JB",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2U1NjY0MjEzNzkzQGdtYWlsLmNvbSIsImlhdCI6MTY5MjE4NDU3NywiZXhwIjoxNjkyMjcwOTc3fQ.F7eK6vL1YD7FNL2A78adsHRWVaGlszbIo_vzCyJPq3CWHfOa93C0xoBbJqxup6-m",
 									"type": "string"
 								}
 							]
@@ -88,13 +100,24 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{BaseUrl}}/user/uploads",
+							"raw": "{{BaseUrl}}/user/uploads?page=0",
 							"host": [
 								"{{BaseUrl}}"
 							],
 							"path": [
 								"user",
 								"uploads"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "4",
+									"disabled": true
+								}
 							]
 						}
 					},
@@ -111,7 +134,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2U1NjY0MjEzNzkzQGdtYWlsLmNvbSIsImlhdCI6MTY5MTk0NjY4MSwiZXhwIjoxNjkyMDMzMDgxfQ.IqqxiScJKggWzH5K0sr6y5YtcJddyPPUO1_YjQtEgakFJ75V72WTv7dAwFXOu6JB",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2U1NjY0MjEzNzkzQGdtYWlsLmNvbSIsImlhdCI6MTY5MjE4NDU3NywiZXhwIjoxNjkyMjcwOTc3fQ.F7eK6vL1YD7FNL2A78adsHRWVaGlszbIo_vzCyJPq3CWHfOa93C0xoBbJqxup6-m",
 									"type": "string"
 								}
 							]
@@ -151,7 +174,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2U1NjY0MjEzNzkzQGdtYWlsLmNvbSIsImlhdCI6MTY5MTk0NjY4MSwiZXhwIjoxNjkyMDMzMDgxfQ.IqqxiScJKggWzH5K0sr6y5YtcJddyPPUO1_YjQtEgakFJ75V72WTv7dAwFXOu6JB",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2U1NjY0MjEzNzkzQGdtYWlsLmNvbSIsImlhdCI6MTY5MjE4NDU3NywiZXhwIjoxNjkyMjcwOTc3fQ.F7eK6vL1YD7FNL2A78adsHRWVaGlszbIo_vzCyJPq3CWHfOa93C0xoBbJqxup6-m",
 									"type": "string"
 								}
 							]
@@ -188,7 +211,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2U1NjY0MjEzNzkzQGdtYWlsLmNvbSIsImlhdCI6MTY5MTg0NDMyMCwiZXhwIjoxNjkxOTMwNzIwfQ.4eTTbmNTJki7VK9sOCbF9Rrt11EAE3fFOHjN4ZRuuebre2NpJrb11gQQgWtBnDPL",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b3Vzc2VmYW1yQGdtYWlsLmNvbSIsImlhdCI6MTY5MjIwMTkxMSwiZXhwIjoxNjkyMjg4MzExfQ.Hj5WKUqgp_fHwxUk99OTwYFkuS5h5QsfK8kYcyjhQkb7gD_yu78SbmHExWfYTRQl",
 									"type": "string"
 								}
 							]
@@ -245,7 +268,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "{{BaseUrl}}/auth/confirm-password?email=youssefamr2244@gmail.com&code=2681",
+									"raw": "{{BaseUrl}}/auth/confirm-password?email=youssefamr2244@gmail.com&code=8709",
 									"host": [
 										"{{BaseUrl}}"
 									],
@@ -260,7 +283,7 @@
 										},
 										{
 											"key": "code",
-											"value": "2681"
+											"value": "8709"
 										}
 									]
 								}
@@ -275,7 +298,7 @@
 									"bearer": [
 										{
 											"key": "token",
-											"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2U1NjY0MjEzNzkzQGdtYWlsLmNvbSIsImlhdCI6MTY5MTc0OTUzNiwiZXhwIjoxNjkxODM1OTM2fQ.M0-WDhvFqtQjUaJAOrp-cRRPaiKrwjcluNRbXQOeoElfg244s6ZufA401dgFnvgo",
+											"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b3Vzc2VmYW1yMjI0NEBnbWFpbC5jb20iLCJpYXQiOjE2OTIxODQ0MzcsImV4cCI6MTY5MjI3MDgzN30.MOlo4SCmSN9-ii7FQeDlF7ll5jyc7ORa1iyQ7dnneJaQAoNe5uJOkgtWICB3MWbF",
 											"type": "string"
 										}
 									]
@@ -313,7 +336,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"first_name\":\"Youssef\",\r\n    \"last_name\":\"Amr\",\r\n    \"email\":\"youssefamr2244@gmail.com\"\r\n}\r\n// joe5664213793@gmail.com",
+							"raw": "{\r\n    \"first_name\":\"Youssef\",\r\n    \"last_name\":\"Amr\",\r\n    \"email\":\"youssefamr@gmail.com\"\r\n}\r\n// joe5664213793@gmail.com",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -340,7 +363,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"first_name\":\"Joe\",\r\n    \"last_name\":\"Amr\",\r\n    \"email\":\"youssefamr2244@gmail.com\",\r\n    \"password\":\"Youssef@123\",\r\n    \"phone_number\":\"+20 102 328 7109\",\r\n    \"latitude\" : 32.1245,\r\n    \"longitude\": 20.0921\r\n}",
+							"raw": "{\r\n    \"first_name\":\"Joe\",\r\n    \"last_name\":\"Amr\",\r\n    \"email\":\"youssefamr@gmail.com\",\r\n    \"password\":\"uuU@123u\",\r\n    \"phone_number\":\"+20 102 328 7109\",\r\n    \"latitude\" : 32.1245,\r\n    \"longitude\": 20.0921\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -348,7 +371,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{BaseUrl}}/auth/signup?otp=5499",
+							"raw": "{{BaseUrl}}/auth/signup?otp=5558",
 							"host": [
 								"{{BaseUrl}}"
 							],
@@ -359,7 +382,7 @@
 							"query": [
 								{
 									"key": "otp",
-									"value": "5499"
+									"value": "5558"
 								}
 							]
 						}
@@ -401,7 +424,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2U1NjY0MjEzNzkzQGdtYWlsLmNvbSIsImlhdCI6MTY5MTk0NTY3NiwiZXhwIjoxNjkyMDMyMDc2fQ.u4czj0PO0jHS06Poovc0D6GkvzymcfEfDV4rDxfjCr-v311cGB_UuD-BWT3cgjmt",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b3Vzc2VmYW1yMjI0NEBnbWFpbC5jb20iLCJpYXQiOjE2OTIxODQzMTAsImV4cCI6MTY5MjI3MDcxMH0.Fwog9pAAPDHp5jb3YFZyBktojpcCtjka4hJdGw6N2idcWQE4ePC2RFaqSc-aSpdn",
 									"type": "string"
 								}
 							]
@@ -437,7 +460,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"first_name\":\"Mourad\",\r\n    \"last_name\":\"Dayef\",\r\n    \"email\":\"mouraddayef9@gmail.com\",\r\n    \"image_url\":null\r\n}",
+							"raw": "{\r\n    \"first_name\":\"Smsrly\",\r\n    \"last_name\":\"Co.\",\r\n    \"email\":\"smsrly2023@gmail.com\",\r\n    \"image_url\":null\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -465,7 +488,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJtb3VyYWRkYXllZjlAZ21haWwuY29tIiwiaWF0IjoxNjkxOTQ1ODYxLCJleHAiOjE2OTI1NTA2NjF9.82iwaYGJl79Gd_TK2xOF3m9LIqydaF-r-nqMJHEPQJBG2otJ_NYolulhYiYWi_v9",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzbXNybHkyMDIzQGdtYWlsLmNvbSIsImlhdCI6MTY5MjE4NDAxMSwiZXhwIjoxNjkyNzg4ODExfQ.VhyMMH0_1Zl3ncid_1rnhP11PoyO9yHQcrzDRTV1AUtn64yEBxGMBJkG2siHdapr",
 									"type": "string"
 								}
 							]
@@ -498,7 +521,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJtb3VyYWRkYXllZjlAZ21haWwuY29tIiwiaWF0IjoxNjkxOTQ1OTA3LCJleHAiOjE2OTIwMzIzMDd9.0UdHJTcsdwm1YqWDIZnKUIdEz9mUgRmtXVX9Uw7Ho8XN6slMl5LKv8zgYwVYOUAJ",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzbXNybHkyMDIzQGdtYWlsLmNvbSIsImlhdCI6MTY5MjE4NDExNSwiZXhwIjoxNjkyMjcwNTE1fQ.eyAd-oaeIjw3SuEo14cyTqqmiqyTku7h20f3RmI2F5LuFgFZ6p7GvFcZ9sYOfufh",
 									"type": "string"
 								}
 							]
@@ -507,7 +530,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": " {\r\n    \"title\":\"real estate for sale\",\r\n    \"description\":\"real estate description, if you want this real estate please call me or request it\",\r\n    \"area\":100,\r\n    \"floor_number\":3,\r\n    \"bathroom_number\":1,\r\n    \"room_number\":3,\r\n    \"price\":1000000,\r\n    \"latitude\":30.01741,\r\n    \"longitude\":31.248116,\r\n    \"city\":\"cairo\",\r\n    \"country\":\"down town\",\r\n    \"is_sale\":true\r\n}",
+							"raw": " {\r\n    \"title\":\"real estate for rent\",\r\n    \"description\":\"real estate description, if you want this real estate please call me or request it\",\r\n    \"area\":100,\r\n    \"floor_number\":3,\r\n    \"bathroom_number\":1,\r\n    \"room_number\":3,\r\n    \"price\":1000000,\r\n    \"latitude\":30.01741,\r\n    \"longitude\":31.248116,\r\n    \"city\":\"cairo\",\r\n    \"country\":\"down town\",\r\n    \"is_sale\":false\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -528,6 +551,43 @@
 				},
 				{
 					"name": "get-real-estates Endpoint",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b3Vzc2VmYW1yMjI0NEBnbWFpbC5jb20iLCJpYXQiOjE2OTIxODQ1MDEsImV4cCI6MTY5MjI3MDkwMX0.clszZU_n4MmpcQXxFNWGZmy5epUxwSlH2VCYM4808iP8MqIRhUEsiRgfJeJBjmr3",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{BaseUrl}}/real-estate?page=1&size=10",
+							"host": [
+								"{{BaseUrl}}"
+							],
+							"path": [
+								"real-estate"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "filter-real-estates Endpoint",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -537,7 +597,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2U1NjY0MjEzNzkzQGdtYWlsLmNvbSIsImlhdCI6MTY5MTk0NjY4MSwiZXhwIjoxNjkyMDMzMDgxfQ.IqqxiScJKggWzH5K0sr6y5YtcJddyPPUO1_YjQtEgakFJ75V72WTv7dAwFXOu6JB",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2U1NjY0MjEzNzkzQGdtYWlsLmNvbSIsImlhdCI6MTY5MjI5Mzc1NCwiZXhwIjoxNjkyMzgwMTU0fQ.AM1nAqN8ujgobQB6NxDUkv92tDdZLDjUTXP0GVDBTmsV9ttLPG91WpHi8RFq6Yum",
 									"type": "string"
 								}
 							]
@@ -546,7 +606,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n        \"User\": {\r\n        \"firstName\": \"Mourad\",\r\n        \"lastName\": \"Ashraf\",\r\n        \"password\": \"$2a$10$5xBs4nKxRuWJZog1SzV7h.xAL.zL2o2kt5IELCedPeaRCmwgiU/ge\",\r\n        \"phoneNumber\": 201000845943,\r\n        \"latitude\": 0.0,\r\n        \"longitude\": 0.0,\r\n        \"image\": null,\r\n        \"realEstate\": [\r\n            {\r\n                \"title\":\"test\",\r\n                \"description\":\"description\",\r\n                \"area\":1000,\r\n                \"floorNumber\":1,\r\n                \"bathroomNumber\":1,\r\n                \"roomNumber\":1,\r\n                \"price\":10000,\r\n                \"latitude\":0.244234234,\r\n                \"longitude\":0.5345234234,\r\n                \"image\":\"jhdsfskdgfksdf\"\r\n            }\r\n        ],\r\n        \"message\": [],\r\n        \"save\": [],\r\n        \"userRequest\": [],\r\n        \"enabled\": true,\r\n        \"accountNonLocked\": true,\r\n        \"credentialsNonExpired\": true,\r\n        \"accountNonExpired\": true,\r\n        \"authorities\": null,\r\n        \"username\": \"mouraddayef9@gamil.com\"\r\n    }\r\n}",
+							"raw": "{\r\n    \"title\":null,\r\n    \"price\":null,\r\n    \"area\":null,\r\n    \"floor_number\":null,\r\n    \"bathroom_number\":null,\r\n    \"room_number\":null,\r\n    \"is_sale\":null\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -554,12 +614,25 @@
 							}
 						},
 						"url": {
-							"raw": "{{BaseUrl}}/real-estate",
+							"raw": "{{BaseUrl}}/real-estate/filter",
 							"host": [
 								"{{BaseUrl}}"
 							],
 							"path": [
-								"real-estate"
+								"real-estate",
+								"filter"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0",
+									"disabled": true
+								},
+								{
+									"key": "size",
+									"value": "5",
+									"disabled": true
+								}
 							]
 						}
 					},
@@ -573,7 +646,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b3Vzc2VmYW1yMjI0NEBnbWFpbC5jb20iLCJpYXQiOjE2OTE5NDU4MjIsImV4cCI6MTY5MjAzMjIyMn0.Us2m5qCMlvAD0MOxKrH7WX9sKc16xn8KMNcQUqeoFNI6e-imZ9LEFnxCdfckAtAa",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2U1NjY0MjEzNzkzQGdtYWlsLmNvbSIsImlhdCI6MTY5MjE4NDU3NywiZXhwIjoxNjkyMjcwOTc3fQ.F7eK6vL1YD7FNL2A78adsHRWVaGlszbIo_vzCyJPq3CWHfOa93C0xoBbJqxup6-m",
 									"type": "string"
 								}
 							]
@@ -582,7 +655,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": " {\r\n    \"title\":\"real estate\",\r\n    \"description\":\"real estate description, if you want this real estate please call me or request it\",\r\n    \"area\":100,\r\n    \"floor_number\":3,\r\n    \"bathroom_number\":1,\r\n    \"room_number\":3,\r\n    \"price\":1000000,\r\n    \"latitude\":30.01741,\r\n    \"longitude\":31.248116,\r\n    \"city\":\"cairo\",\r\n    \"country\":\"down town\",\r\n    \"is_sale\":true\r\n}",
+							"raw": " {\r\n    \"title\":\"real estate 12 for sale\",\r\n    \"description\":\"real estate description, if you want this real estate please call me or request it\",\r\n    \"area\":100,\r\n    \"floor_number\":3,\r\n    \"bathroom_number\":1,\r\n    \"room_number\":3,\r\n    \"price\":1000000,\r\n    \"latitude\":30.01741,\r\n    \"longitude\":31.248116,\r\n    \"city\":\"cairo\",\r\n    \"country\":\"down town\",\r\n    \"is_sale\":true\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -590,13 +663,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{BaseUrl}}/real-estate/1",
+							"raw": "{{BaseUrl}}/real-estate/24",
 							"host": [
 								"{{BaseUrl}}"
 							],
 							"path": [
 								"real-estate",
-								"1"
+								"24"
 							],
 							"query": [
 								{
@@ -694,40 +767,38 @@
 				},
 				{
 					"name": "get-real-estate-requests Endpoint",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
 					"request": {
 						"auth": {
 							"type": "bearer",
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJtb3VyYWRkYXllZjlAZ21haWwuY29tIiwiaWF0IjoxNjkxOTQ1OTA3LCJleHAiOjE2OTIwMzIzMDd9.0UdHJTcsdwm1YqWDIZnKUIdEz9mUgRmtXVX9Uw7Ho8XN6slMl5LKv8zgYwVYOUAJ",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2U1NjY0MjEzNzkzQGdtYWlsLmNvbSIsImlhdCI6MTY5MjE4NDU3NywiZXhwIjoxNjkyMjcwOTc3fQ.F7eK6vL1YD7FNL2A78adsHRWVaGlszbIo_vzCyJPq3CWHfOa93C0xoBbJqxup6-m",
 									"type": "string"
 								}
 							]
 						},
 						"method": "GET",
 						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n        \"userId\":\"2\",\r\n        \"realEstateId\":\"3\"\r\n}",
-							"options": {
-								"raw": {
-									"language": "json"
-								}
-							}
-						},
 						"url": {
-							"raw": "{{BaseUrl}}/real-estate/2/requests",
+							"raw": "{{BaseUrl}}/real-estate/10/requests?page=1&size=2",
 							"host": [
 								"{{BaseUrl}}"
 							],
 							"path": [
 								"real-estate",
-								"2",
+								"10",
 								"requests"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "size",
+									"value": "2"
+								}
 							]
 						}
 					},
@@ -746,7 +817,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b3Vzc2VmYW1yMjI0NEBnbWFpbC5jb20iLCJpYXQiOjE2OTE5NDU4MjIsImV4cCI6MTY5MjAzMjIyMn0.Us2m5qCMlvAD0MOxKrH7WX9sKc16xn8KMNcQUqeoFNI6e-imZ9LEFnxCdfckAtAa",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJzbXNybHkyMDIzQGdtYWlsLmNvbSIsImlhdCI6MTY5MjE4NDExNSwiZXhwIjoxNjkyMjcwNTE1fQ.eyAd-oaeIjw3SuEo14cyTqqmiqyTku7h20f3RmI2F5LuFgFZ6p7GvFcZ9sYOfufh",
 									"type": "string"
 								}
 							]
@@ -763,13 +834,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{BaseUrl}}/save/2",
+							"raw": "{{BaseUrl}}/save/12",
 							"host": [
 								"{{BaseUrl}}"
 							],
 							"path": [
 								"save",
-								"2"
+								"12"
 							]
 						}
 					},
@@ -783,7 +854,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b3Vzc2VmYW1yMjI0NEBnbWFpbC5jb20iLCJpYXQiOjE2OTE5NDU4MjIsImV4cCI6MTY5MjAzMjIyMn0.Us2m5qCMlvAD0MOxKrH7WX9sKc16xn8KMNcQUqeoFNI6e-imZ9LEFnxCdfckAtAa",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b3Vzc2VmYW1yMjI0NEBnbWFpbC5jb20iLCJpYXQiOjE2OTIxODQ1MDEsImV4cCI6MTY5MjI3MDkwMX0.clszZU_n4MmpcQXxFNWGZmy5epUxwSlH2VCYM4808iP8MqIRhUEsiRgfJeJBjmr3",
 									"type": "string"
 								}
 							]
@@ -800,13 +871,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{BaseUrl}}/save/2",
+							"raw": "{{BaseUrl}}/save/11",
 							"host": [
 								"{{BaseUrl}}"
 							],
 							"path": [
 								"save",
-								"2"
+								"11"
 							]
 						}
 					},
@@ -825,7 +896,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b3Vzc2VmYW1yMjI0NEBnbWFpbC5jb20iLCJpYXQiOjE2OTE5NDU4MjIsImV4cCI6MTY5MjAzMjIyMn0.Us2m5qCMlvAD0MOxKrH7WX9sKc16xn8KMNcQUqeoFNI6e-imZ9LEFnxCdfckAtAa",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b3Vzc2VmYW1yMjI0NEBnbWFpbC5jb20iLCJpYXQiOjE2OTIxODQ1MDEsImV4cCI6MTY5MjI3MDkwMX0.clszZU_n4MmpcQXxFNWGZmy5epUxwSlH2VCYM4808iP8MqIRhUEsiRgfJeJBjmr3",
 									"type": "string"
 								}
 							]
@@ -842,13 +913,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{BaseUrl}}/request/2",
+							"raw": "{{BaseUrl}}/request/11",
 							"host": [
 								"{{BaseUrl}}"
 							],
 							"path": [
 								"request",
-								"2"
+								"11"
 							]
 						}
 					},
@@ -862,7 +933,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b3Vzc2VmYW1yMjI0NEBnbWFpbC5jb20iLCJpYXQiOjE2OTE5NDU4MjIsImV4cCI6MTY5MjAzMjIyMn0.Us2m5qCMlvAD0MOxKrH7WX9sKc16xn8KMNcQUqeoFNI6e-imZ9LEFnxCdfckAtAa",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b3Vzc2VmYW1yMjI0NEBnbWFpbC5jb20iLCJpYXQiOjE2OTIxODQ1MDEsImV4cCI6MTY5MjI3MDkwMX0.clszZU_n4MmpcQXxFNWGZmy5epUxwSlH2VCYM4808iP8MqIRhUEsiRgfJeJBjmr3",
 									"type": "string"
 								}
 							]
@@ -879,13 +950,13 @@
 							}
 						},
 						"url": {
-							"raw": "{{BaseUrl}}/request/2",
+							"raw": "{{BaseUrl}}/request/11",
 							"host": [
 								"{{BaseUrl}}"
 							],
 							"path": [
 								"request",
-								"2"
+								"11"
 							]
 						}
 					},
@@ -904,7 +975,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJ5b3Vzc2VmYW1yMjI0NEBnbWFpbC5jb20iLCJpYXQiOjE2OTE5NDU4MjIsImV4cCI6MTY5MjAzMjIyMn0.Us2m5qCMlvAD0MOxKrH7WX9sKc16xn8KMNcQUqeoFNI6e-imZ9LEFnxCdfckAtAa",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2U1NjY0MjEzNzkzQGdtYWlsLmNvbSIsImlhdCI6MTY5MjI5Mzc1NCwiZXhwIjoxNjkyMzgwMTU0fQ.AM1nAqN8ujgobQB6NxDUkv92tDdZLDjUTXP0GVDBTmsV9ttLPG91WpHi8RFq6Yum",
 									"type": "string"
 								}
 							]
@@ -942,7 +1013,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJtb3VyYWRkYXllZjlAZ21haWwuY29tIiwiaWF0IjoxNjkxOTQ1OTA3LCJleHAiOjE2OTIwMzIzMDd9.0UdHJTcsdwm1YqWDIZnKUIdEz9mUgRmtXVX9Uw7Ho8XN6slMl5LKv8zgYwVYOUAJ",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2U1NjY0MjEzNzkzQGdtYWlsLmNvbSIsImlhdCI6MTY5MjI5Mzc1NCwiZXhwIjoxNjkyMzgwMTU0fQ.AM1nAqN8ujgobQB6NxDUkv92tDdZLDjUTXP0GVDBTmsV9ttLPG91WpHi8RFq6Yum",
 									"type": "string"
 								}
 							]
@@ -960,14 +1031,14 @@
 							]
 						},
 						"url": {
-							"raw": "{{BaseUrl}}/image/real-estate/2",
+							"raw": "{{BaseUrl}}/image/real-estate/4",
 							"host": [
 								"{{BaseUrl}}"
 							],
 							"path": [
 								"image",
 								"real-estate",
-								"2"
+								"4"
 							]
 						}
 					},
@@ -981,7 +1052,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2U1NjY0MjEzNzkzQGdtYWlsLmNvbSIsImlhdCI6MTY5MTk0NzkxNCwiZXhwIjoxNjkyMDM0MzE0fQ.dP-3s3zgUGJiMavAN-ZoEib67SBtwexJ9vre4idpZ1A-ChW6LjkYDXqnVqBfttH8",
+									"value": "eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJqb2U1NjY0MjEzNzkzQGdtYWlsLmNvbSIsImlhdCI6MTY5MjI5Mzc1NCwiZXhwIjoxNjkyMzgwMTU0fQ.AM1nAqN8ujgobQB6NxDUkv92tDdZLDjUTXP0GVDBTmsV9ttLPG91WpHi8RFq6Yum",
 									"type": "string"
 								}
 							]
@@ -990,23 +1061,17 @@
 						"header": [],
 						"body": {
 							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "",
-									"value": "",
-									"type": "text"
-								}
-							]
+							"formdata": []
 						},
 						"url": {
-							"raw": "{{BaseUrl}}/image/user/joe5664213793.jpg",
+							"raw": "{{BaseUrl}}/image/real-estate/joe5664213793_4_real_estate_2_for_sale_1.jpg",
 							"host": [
 								"{{BaseUrl}}"
 							],
 							"path": [
 								"image",
-								"user",
-								"joe5664213793.jpg"
+								"real-estate",
+								"joe5664213793_4_real_estate_2_for_sale_1.jpg"
 							]
 						}
 					},
